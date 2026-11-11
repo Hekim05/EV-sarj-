@@ -1,4 +1,4 @@
-const VERSION = '2026.11.11-1';
+const VERSION = '2026.11.11-2';
 const CACHE = 'app-' + VERSION;
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).catch(() => {})); });

@@ -1019,7 +1019,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 
 <script>
 /* EV Şarj — yerel veri katmanı (yalnızca bu cihaz), indirme ve isteğe bağlı Tessie istemcisi */
-const APP_VERSION='2026.11.11-1';
+const APP_VERSION='2026.11.11-2';
 (function(){
   const KEY='evsarj.db.v1';let store={docs:{}};
   try{store=JSON.parse(localStorage.getItem(KEY)||'{"docs":{}}');if(!store.docs)store={docs:{}}}catch(e){}
@@ -2250,6 +2250,7 @@ const PRESETS=[
  ['Togg T10X Standart Menzil',52.4,314],['Togg T10X Uzun Menzil',88.5,523],
  ['Renault Megane E-Tech EV60',60,450],['MG4 Standard',50.8,350],['MG4 Long Range',61.7,435],
  ['BYD Atto 3',60.5,420],['BYD Dolphin 60 kWh',60.4,427],['Hyundai Kona Electric 65 kWh',64.8,514],
+ ['KGM Torres EVX (73 kWh, 2024–25)',72,462],['KGM Torres EVX (80,6 kWh, 2026)',79,503],
  ['Volkswagen ID.3 Pro',58,426],['Kia EV6 77 kWh',77.4,528],['Fiat 500e 42 kWh',37.3,320]];
 $('vPreset').innerHTML=PRESETS.map((p,i)=>'<option value="'+i+'">'+p[0]+(p[1]?' · '+String(p[1]).replace('.',',')+' kWh · '+p[2]+' km':'')+'</option>').join('');
 const MIRROR=[['aRange','rgFull'],['aLen','len'],['aSec','sec'],['aV','v'],['aPrice','price'],['aHome','home']];
